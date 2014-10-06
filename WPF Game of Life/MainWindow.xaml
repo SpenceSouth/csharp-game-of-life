@@ -1,0 +1,20 @@
+﻿<Window x:Class="WPF_Game_of_Life.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Spence's Game of Life" Height="auto" Width="auto">
+    <Grid x:Name="Plane" Grid.Row="1" Grid.Column="2">
+
+        <Grid x:Name="Control_Grid" Margin="0,-27,-0.4,27.6">
+            <Button x:Name="Debug_Button" Content="Stop" HorizontalAlignment="Left" Margin="591,134,0,0" VerticalAlignment="Top" Click="Debug_Button_Click" Width="62"/>
+            <Button x:Name="Button" Content="Reset" HorizontalAlignment="Left" Margin="667,134,0,0" VerticalAlignment="Top" Click="Button_Click" Width="62"/>
+            <Button x:Name="Cycle_Button" Content="Cycle" HorizontalAlignment="Left" Margin="667,160,0,0" VerticalAlignment="Top" Width="62" Height="18" Click="Cycle_Click"/>
+            <TextBlock x:Name="DebugDisplay" HorizontalAlignment="Left" Margin="525,197,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="237" Height="270"/>
+            <TextBox x:Name="Input_Box" HorizontalAlignment="Left" Margin="611,53,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="94"/>
+            <Button x:Name="Randomize" Content="Randomize" HorizontalAlignment="Left" Margin="591,159,0,0" VerticalAlignment="Top" Click="Random_Click"/>
+            <TextBlock HorizontalAlignment="Left" Margin="611,37,0,0" TextWrapping="Wrap" Text="# of Cycles" VerticalAlignment="Top"/>
+            <CheckBox x:Name="altRules" Content="2,2,2 Rules" HorizontalAlignment="Left" Margin="611,95,0,0" VerticalAlignment="Top" Checked="altRules_Checked" Unchecked="uncheckedClick"/>
+
+        </Grid>
+
+    </Grid>
+</Window>
